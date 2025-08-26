@@ -1,5 +1,7 @@
 import pathlib
 
-YEAR = '2025'
+YEAR = (2017, 2015)
 
-pathlib.Path(f'figures/{YEAR}').mkdir(parents=True)
+for i in range(YEAR[0], YEAR[1]-1, -1):
+    print(i)
+    pathlib.Path(f'data/{str(i)}').mkdir(parents=True)
